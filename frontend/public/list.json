@@ -1,0 +1,99 @@
+{
+    "list" : [
+    {
+        "id": 1,
+        "title": "The Girl with the Dragon Tattoo",
+        "author": "Stieg Larsson",
+        "price": 0,
+        "category": "free",
+        "image": "./book.jpg"
+    },
+    {
+        "id": 2,
+        "title": "The Outsider",
+        "author": "Stephen King",
+        "price": 0,
+        "category": "free",
+        "image": "./book.jpg"
+    },
+    {
+        "id": 3,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "price": 0,
+        "category": "free",
+        "image": "./book.jpg"
+    },
+    {   "id": 4,
+        "title": "1984",
+        "author": "George Orwell",
+        "price": 0,
+        "category": "free",
+        "image":"./book.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "price": 0,
+        "category": "free",
+        "image":"./book.jpg"
+      },
+      {
+        "id": 6,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "price": 0,
+        "category": "free",
+        "image":"./book.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "price": 15,
+        "category": "Adventure",
+        "image":"./book.jpg"
+      },
+      {
+        "id": 8,
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "price": 10,
+        "category": "Historical Fiction",
+        "image":"./book.jpg"
+      },
+      {
+        "id": 9,
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+       "price": 5,
+        "category": "Classic Fiction",
+        "image":"./book.jpg"
+      },
+      {
+        "id": 10,
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "price": 20,
+        "category": "Fantasy",
+        "image":"./book.jpg"
+      },
+      {
+        "id": 11,
+        "title": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+       "price": 20,
+        "category": "Fantasy",
+        "image":"./book.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Fahrenheit 451",
+        "author": "Ray Bradbury",
+        "price": 50,
+        "category": "Dystopian",
+        "image":"./book.jpg"
+      }
+    ]
+  }  
