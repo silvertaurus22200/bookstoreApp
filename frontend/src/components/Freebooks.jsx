@@ -1,12 +1,35 @@
-import list from '../list.json'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Cards from './Cards';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function Freebooks() {
 
-  const filteredList = list.filter((item) => item.category === 'free');
+    const [book,setBook] = useState([]);
+  
+  useEffect(()=>{
+
+    const getBooks = async()=>{
+      
+      try {
+        
+        const res = await axios.get("http://localhost:4001/book");
+        const books = res.data.data.books;
+        const filteredBooks = books.filter((item)=> item.category === 'free');
+        console.log(res.data);
+        setBook(filteredBooks);
+        console.log(filteredBooks)
+        
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    getBooks()
+
+  },[])
 
   var settings = {
     dots: true,
@@ -49,7 +72,7 @@ function Freebooks() {
         <p className='mt-3'>We provide 100% free e-books that you can read without any need for registration. For more books please
         register with us and access more premuim books. </p>
         <Slider {...settings}>
-          {filteredList.map((item) => {
+          {book.map((item) => {
             return <Cards item={item} key={item.id} />
           })}
         </Slider>

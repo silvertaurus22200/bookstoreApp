@@ -1,10 +1,29 @@
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useForm} from "react-hook-form";
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
 function Login() {
     const {register, handleSubmit, formState: { errors } } = useForm();
+    const navigate = useNavigate();
 
-    const onSubmit = (data) =>{ console.log(data)}
+    const onSubmit = async (data) =>{ 
+        const userInfo = {
+            email: data.email,
+            password: data.password
+          }
+  
+          await axios.post("http://localhost:4001/user/login", userInfo)
+                .then((res)=>{
+                    toast.success(res.data.message)
+                    localStorage.setItem("User", JSON.stringify(res.data.user))
+                    navigate("/")
+                    window.location.reload();
+                }).catch((err)=>{
+                  toast.error(err.response.data.message);
+                })
+
+    }
 
 
     return (

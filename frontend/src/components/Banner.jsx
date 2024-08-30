@@ -3,7 +3,7 @@ import banner from '/banner.jpg'
 function Banner() {
     return (
         <>
-            <div className='max-width-screen-2xl container mx-auto px-4 md:px-20 flex flex-col md:flex-row my-8 dark:bg-slate-900 dark:text-white'>
+            <div className='max-width-screen-2xl container mx-auto px-4 md:px-20 flex flex-col md:flex-row pt-8 dark:bg-slate-900 dark:text-white'>
                 <div className='w-full md:w-1/2 mt-12 md:mt-28 order-2 md:order-1'>
                     <div className='space-y-12'>
                         <h1 className='text-4xl font-bold'>Hello, Welcome to the BookStore.<br />
